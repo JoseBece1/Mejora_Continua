@@ -6,7 +6,6 @@ float division(float a, float b);
 
 int main(){
     float a, b;
-    float sumares, restares, multires, divires;
 
     std::cout << "Dame a\n";
     std::cin >> a;
@@ -14,15 +13,13 @@ int main(){
     std::cout << "Dame b\n";
     std::cin >> b;
 
-    sumares = suma(a,b);
-    restares = resta(a,b);
-    multires = multiplicacion(a,b);
-    divires = division(a,b);
 
-    std::cout << "Suma: " << sumares << "\n";
-    std::cout << "Resta: " << restares << "\n";
-    std::cout << "Multiplicacion: " << multires << "\n";
-    std::cout << "Division: " << divires << "\n";
+    std::cout << "Suma: " << suma(a,b) << "\n";
+    std::cout << "Resta: " << resta(a,b) << "\n";
+    std::cout << "Multiplicacion: " << multiplicacion(a,b) << "\n";
+    std::cout << "Division: " << division(a,b) << "\n";
+
+    return 0;
 }
 
 float suma(float a, float b){return a+b;}
