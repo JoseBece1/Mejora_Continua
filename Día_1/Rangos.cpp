@@ -8,6 +8,8 @@ int main(){
 
     if(std::cin.fail()){
         std::cout << "Entrada invalida";
+        std::cin.clear();              // Limpia el estado de error del flujo
+        std::cin.ignore(1000, '\n');   // Descarta los caracteres restantes del buffer
     }
 
     else if (calificacion < 0 || calificacion > 100) std::cout << "Calificacion invalida...\n";
