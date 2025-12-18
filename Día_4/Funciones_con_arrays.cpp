@@ -37,7 +37,7 @@ float calcularPromedio(int num[], int tam){
     for(int i = 0; i < tam; i++){
         suma += num[i]; 
     }
-    promedio = suma/tam;
+    promedio = static_cast<float>(suma)/tam;
 
     std::cout << "Promedio:" << promedio << '\n';
     return promedio;
