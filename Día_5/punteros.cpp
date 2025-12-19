@@ -6,9 +6,10 @@ int main() {
     int *p = &x;
 
     std::cout << "Valor de x: " << x << std::endl;
-    std::cout << "Direccion de x: " << &x << std::endl;
-    std::cout << "Valor en el puntero: " << p << std::endl; 
-    std::cout << "Valor a que apunta el puntero: " << *p <<std::endl;
-    
+
+    *p = 50;
+
+    std::cout << "Nuevo valor de x mediante puntero: " << x <<std::endl;
+
     return 0;
 }
