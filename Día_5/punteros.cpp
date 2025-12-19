@@ -1,15 +1,18 @@
 
 #include <iostream>
 
+void duplicar(int *p);
+
 int main() {
     int x = 10;
-    int *p = &x;
+    
+    duplicar(&x);
+    std::cout << "Valor de x duplicado: " << x;
 
-    std::cout << "Valor de x: " << x << std::endl;
-
-    *p = 50;
-
-    std::cout << "Nuevo valor de x mediante puntero: " << x <<std::endl;
 
     return 0;
+}
+
+void duplicar(int *p) {
+    *p *= 2;
 }
