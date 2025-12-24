@@ -39,7 +39,7 @@ void ingreso_valores(std::vector<int> &arreglo, int tam){
 
 float promedio(const std::vector<int>& arreglo){
     int suma = 0;
-    for(int i = 0; i < arreglo.size(); i++){
+    for(int i = 0; i < (int)arreglo.size(); i++){
         suma += arreglo.at(i);
     }
     return float(suma) / arreglo.size();
