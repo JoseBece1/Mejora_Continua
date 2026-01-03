@@ -36,7 +36,7 @@ void carga_archivo(std::vector<int> &nums, std::string ref){
 }
 
 void guardar(const std::vector<int> &nums, std::string ref){
-    std::ofstream archivo(ref, std::ios::trunc);
+    std::ofstream archivo(ref);
     if(!archivo){
         std::cout << "Error al guardar los numeros\n";
     }
